@@ -223,6 +223,7 @@ section {
     max-width: 90%;
     border-radius: 20%;
     transition: 2s ease-in-out;
+    clip-path: ellipse(230px 340px at 50% 10%);
 }
 
 .about-img img:hover {
@@ -305,6 +306,56 @@ section {
 .s-box p {
     font-family: monospace;
     font-size: 1.6rem;
+}
+
+.mission {
+    position: relative;
+    padding: 5rem 9rem;
+}
+
+.mission h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: coral;
+    filter: blur(2px);
+}
+
+.mission p {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+
+.chance {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    backdrop-filter: blur(3px);
+}
+
+.chance h2 {
+    font-size: 2.7rem;
+    color: var(--text-color);
+    font-weight: bolder;
+    padding: 3rem 30rem;
+}
+
+.chance .btn3 {
+    background-color: #e91010;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    margin: 0 45rem 3rem;
+    transition: .8s ease-in-out;
+}
+
+.chance .btn3:hover {
+    color: #e91010;
+    background-color: #fff;
+    transition: .8s ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -431,5 +482,41 @@ section {
     }
     .reading span {
         margin: 0 0 0 30px;
+    }
+    .chance {
+        height: 98px;
+        width: 45rem;
+    }
+    .chance h2 {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+    .chance .btn3 {
+        padding: 1rem 3rem;
+        margin: -10rem 16rem;
+    }
+}
+
+@media (max-width: 550px) {
+    header .navbar {
+        margin: 0 0 0 -15rem;
+        gap: -3rem;
+    }
+    .mission {
+        padding: 3rem 5rem;
+    }
+    .chance {
+        height: 98px;
+        width: 37rem;
+    }
+    .chance .btn3 {
+        padding: 1rem 3rem;
+        margin: -10rem 10rem;
+    }
+}
+
+@media (max-width: 485px) {
+    .mission {
+        padding: 3rem 4rem;
     }
 }
